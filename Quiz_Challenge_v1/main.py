@@ -15,14 +15,14 @@ while is_continue:
             new_question = Question(question_text, question_answer)
             question_bank.append(new_question)
         print("\nWe have rewards and rules for players:\n"
-            f"We have {len(question_bank)} questions\n"
-            "* If you've got from 35% - 50% question right out of the total number of questions. You will get "
-            "Bronze Medal🥇😉\n"
-             "* If you've got from 50% - 75% question right out of the total number of questions. You will get "
-            "the Silver Medal🥈😄\n"
-            "* If you've got from 75% - 100% question right out of the total number of questions. You will get "
-            "the Gold Cup🏆\n\n"
-                  )
+              f"We have {len(question_bank)} questions\n"
+              "* If you've got from 35% - 50% question right out of the total number of questions. You will get "
+              "Bronze Medal🥇😉\n"
+              "* If you've got from 50% - 75% question right out of the total number of questions. You will get "
+              "the Silver Medal🥈😄\n"
+              "* If you've got from 75% - 100% question right out of the total number of questions. You will get "
+              "the Gold Cup🏆\n\n"
+              )
         quiz = QuizBrain(question_bank)
         while quiz.still_have_question():
             quiz.next_question()
@@ -34,5 +34,3 @@ while is_continue:
         is_continue = False
     else:
         print("Please type 'yes' to play!😁 Or 'no' to exit the game. ")
-
-
